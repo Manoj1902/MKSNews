@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MKS News</string>
+    <string name="tag_line">Stay Informed, Stay Connected \nYour Ultimate News Companion.</string>
+    <string name="news_feed">News Feed</string>
+    <string name="home">Home</string>
+    <string name="sports">Sports</string>
+    <string name="health">Health</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="technology">Technology</string>
+    <string name="science">Science</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_heading_text">Main heading display here</string>
+    <string name="main_content_text">Main content text</string>
+    <string name="author_name">author name</string>
+    <string name="publish_timing">publish timing</string>
+    <string name="news_page">News Page</string>
+</resources>

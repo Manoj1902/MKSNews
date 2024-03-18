@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutHomeActivity"
+    android:background="@color/white"
+    tools:context=".Activities.HomeActivity">
+
+    <TextView
+        android:id="@+id/textNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/news_feed"
+        android:textColor="@color/blue"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:layout_marginVertical="@dimen/_18sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <ImageView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/baseline_info_24"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:layout_marginVertical="@dimen/_18sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/blue" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutHomeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNews" >
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:tabMode="scrollable"
+            android:background="@color/grey"
+            app:tabTextAppearance="@style/tabTextFont"
+            app:tabTextColor="@color/bluish_grey"
+            app:tabSelectedTextColor="@color/blue"
+            app:tabIndicatorHeight="@dimen/_3sdp"
+            app:tabIndicatorColor="@color/dark_grey"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="@color/white"
+
+            >
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemSports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sports" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/health" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemScience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/science" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemEntertainment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/entertainment" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemTechnology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/technology" />
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            >
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
